@@ -13,16 +13,34 @@ h2,
 h3,
 h4,
 h5,
-h6, { 
+h6 {
     font-family: "Raleway", sans-serif;
 }
 .header {
-    padding: 48px 16px;
+    padding: 48px 160px;
     text-align: center;
-    background-color:#8FBC8B
-  }
-  .main {
+    background-color:#287c20
+}
+ 
+.main {
     max-width: 800px;
     margin: 0 auto;
     padding: 16px;
-  }
+ }
+
+ .main > * + * {
+  margin-top: 48px;
+ }
+
+.main > * {
+  border-top: 2px solid rgb(17, 17, 198);
+}
+
+.main > *:first-child {
+  border-top: none;
+}
+
+.nav-link {
+    padding: 4px 8px;
+    color: black;
+}
