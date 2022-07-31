@@ -33,14 +33,44 @@ h6 {
  }
 
 .main > * {
-  border-top: 2px solid rgb(17, 17, 198);
+  border-top: 2px solid black;
 }
 
 .main > *:first-child {
   border-top: none;
 }
 
+.nav-link:hover {
+    color: black;
+    background-color: yellow;
+  }
+  
 .nav-link {
     padding: 4px 8px;
     color: black;
 }
+.nav-link:active {
+    color: white;
+    background-color: red;
+  }
+  
+  .nav-link + .nav-link {
+    margin-left: 12px;
+  }
+
+  .profession::before {
+    content: "🎯"
+  }
+  
+  .profession::after {
+      content: "🎯";
+  } 
+  .hire-me {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    background: rgb(231, 85, 0);
+    color: black;
+  }
